@@ -1,0 +1,11 @@
+apps:
+  - script: './dist/index.js'
+    name: 'app'
+    exec: 'cluser'
+    instances: 1
+    watch: false
+  - script: './dist/worker.js'
+    name: 'worker'
+    exec: 'cluster'
+    instances: 'max'
+    watch: false
